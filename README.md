@@ -12,7 +12,7 @@ notebooks/
 ├── 02_extract_after_timbre_embeddings.ipynb
 ├── 03_visualize_after_timbre_embeddings.ipynb
 ├── 04_synesis_linear_probe_clean.ipynb
-
+```
 ## Data
 
 The datasets and generated embeddings are not included in this repository due to their size. To reproduce the experiments, the required data should be placed locally following the paths specified inside the notebooks.
