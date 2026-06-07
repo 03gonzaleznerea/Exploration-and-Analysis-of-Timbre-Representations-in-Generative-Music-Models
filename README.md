@@ -1,6 +1,5 @@
 # Exploration-and-Analysis-of-Timbre-Representations-in-Generative-Music-Models
-A Study of Latent Embeddings in AFTER using NSynth
-# Final Degree Project: Timbre Representation Analysis with AFTER and Synesis
+Final Degree Project: A Study of Latent Embeddings in AFTER using NSynth
 
 This repository contains the code and notebooks used for my Final Degree Project. The project focuses on the analysis of timbre-related information encoded in AFTER Timbre embeddings, using visualization techniques and linear probing experiments.
 
