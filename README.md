@@ -6,20 +6,12 @@ This repository contains the code and notebooks used for my Final Degree Project
 ## Repository structure
 
 ```text
+
 notebooks/
 ├── 01_setup_environment.ipynb
-├── 02_after_visualization_quality_combinations.ipynb
-├── 03_synesis_linear_probe_clean.ipynb
-
-archive/
-└── old exploratory notebooks
-```
-
-## Main notebooks
-
-* `01_setup_environment.ipynb`: environment setup and installation steps required to run Synesis and the project dependencies.
-* `02_after_visualization_quality_combinations.ipynb`: visualization of AFTER Timbre embeddings using dimensionality reduction techniques and NSynth quality combinations.
-* `03_synesis_linear_probe_clean.ipynb`: final linear probing experiments using Synesis and the reduced NSynth subset.
+├── 02_extract_after_timbre_embeddings.ipynb
+├── 03_visualize_after_timbre_embeddings.ipynb
+├── 04_synesis_linear_probe_clean.ipynb
 
 ## Data
 
