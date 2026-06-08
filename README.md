@@ -10,7 +10,8 @@ This repository contains the code and notebooks used for my Final Degree Project
 notebooks/
 ├── 01_setup_environment.ipynb
 ├── 02_extract_after_timbre_embeddings.ipynb
-├── 03_visualize_after_timbre_embeddings.ipynb
+├── 03_nsynth_reduced_dataset_from_archives_with_metadata.ipynb
+├── 04_visualize_after_timbre_embeddings.ipynb
 ├── 04_synesis_linear_probe_clean.ipynb
 ```
 ## Data
