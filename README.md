@@ -12,7 +12,7 @@ notebooks/
 ├── 02_extract_after_timbre_embeddings.ipynb
 ├── 03_nsynth_reduced_dataset_from_archives_with_metadata.ipynb
 ├── 04_visualize_after_timbre_embeddings.ipynb
-├── 04_synesis_linear_probe_clean.ipynb
+├── 05_synesis_linear_probe_clean.ipynb
 ```
 ## Data
 
