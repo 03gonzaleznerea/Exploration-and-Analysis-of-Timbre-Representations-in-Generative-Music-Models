@@ -1,0 +1,385 @@
+configs = {
+    "MDuo": {
+        "__cls__": "MDuo",
+        "item_len_sec": 10,
+        "sample_rate": 16000,
+        "feature_dim": 3840,
+        "extract_kws": {
+            "pooled": True,
+        },
+    },
+    "MelSpec": {
+        "__cls__": "MelSpec",
+        "item_len_sec": 1,
+        "sample_rate": 16000,
+        "extract_kws": {
+            "sample_rate": 16000,
+            "n_mels": 256,
+            "n_fft": 2048,
+            "win_length": 2048,
+            "hop_length": 512,
+        },
+    },
+    "AudioMAE": {
+        "__cls__": "AudioMAE",
+        "item_len_sec": 10,
+        "sample_rate": 16000,
+        "feature_dim": 768,
+        "extract_kws": {
+            "pooled": True,
+        },
+    },
+    "VGGishMTAT": {
+        "__cls__": "VGGishMTAT",
+        "item_len_sec": 3.69,
+        "sample_rate": 16000,
+        "feature_dim": 512,
+    },
+    "MULE_1728": {
+        "__cls__": "MULE",
+        "item_len_sec": 2.99,
+        "sample_rate": 16000,
+        "feature_dim": 1728,
+        "extract_kws": {
+            "key": "encoded",
+        },
+    },
+    "MULE_512": {
+        "__cls__": "MULE",
+        "item_len_sec": 2.99,
+        "sample_rate": 16000,
+        "feature_dim": 512,
+        "extract_kws": {
+            "key": "projected",
+        },
+    },
+    "Music2Latent_8192": {
+        "__cls__": "MusicLatent",
+        "item_len_sec": 3,
+        "sample_rate": 44100,
+        "feature_dim": 8192,
+        "extract_kws": {
+            "extract_features": True,
+        },
+    },
+    "Music2Latent_64": {
+        "__cls__": "MusicLatent",
+        "item_len_sec": 3,
+        "sample_rate": 44100,
+        "feature_dim": 64,
+        "extract_kws": {
+            "extract_features": False,
+        },
+    },
+    "PESTO": {
+        "__cls__": "PESTO",
+        "item_len_sec": 3,
+        "sample_rate": 22050,
+        "feature_dim": 384,
+    },
+    "MERT": {
+        "__cls__": "MERT",
+        "item_len_sec": 3,
+        "sample_rate": 24000,
+        "feature_dim": 768,
+        "extract_kws": {
+            "pooled": True,
+        },
+    },
+    "Wav2Vec2": {
+        "__cls__": "Wav2Vec2",
+        "item_len_sec": 10,
+        "sample_rate": 16000,
+        "feature_dim": 768,
+    },
+    "HuBERT": {
+        "__cls__": "HuBERT",
+        "item_len_sec": 10,
+        "sample_rate": 16000,
+        "feature_dim": 768,
+    },
+    "CLAP": {
+        "__cls__": "CLAP",
+        "item_len_sec": 10,
+        "sample_rate": 48000,
+        "feature_dim": 512,
+    },
+    "Whisper": {
+        "__cls__": "Whisper",
+        "item_len_sec": 10,
+        "sample_rate": 16000,
+        "feature_dim": 768,
+    },
+    "UniSpeech": {
+        "__cls__": "UniSpeech",
+        "item_len_sec": 10,
+        "sample_rate": 16000,
+        "feature_dim": 768,
+    },
+    "XVector": {
+        "__cls__": "XVector",
+        "item_len_sec": 10,
+        "sample_rate": 16000,
+        "feature_dim": 512,
+    },
+    "ResNet18_ImageNet": {
+        "__cls__": "ResNet18_ImageNet",
+        "resize_dim": 256,
+        "input_dim": 224,
+        "feature_dim": 512,
+        "mean": [0.485, 0.456, 0.406],
+        "std": [0.229, 0.224, 0.225],
+    },
+    "ResNet34_ImageNet": {
+        "__cls__": "ResNet34_ImageNet",
+        "resize_dim": 256,
+        "input_dim": 224,
+        "feature_dim": 512,
+        "mean": [0.485, 0.456, 0.406],
+        "std": [0.229, 0.224, 0.225],
+    },
+    "ResNet50_ImageNet": {
+        "__cls__": "ResNet50_ImageNet",
+        "resize_dim": 256,
+        "input_dim": 224,
+        "feature_dim": 2048,
+        "mean": [0.485, 0.456, 0.406],
+        "std": [0.229, 0.224, 0.225],
+    },
+    "ResNet101_ImageNet": {
+        "__cls__": "ResNet101_ImageNet",
+        "resize_dim": 256,
+        "input_dim": 224,
+        "feature_dim": 2048,
+        "mean": [0.485, 0.456, 0.406],
+        "std": [0.229, 0.224, 0.225],
+    },
+    "ViT_ImageNet": {
+        "__cls__": "ViT_b_16_ImageNet",
+        "resize_dim": 256,
+        "input_dim": 224,
+        "feature_dim": 768,
+        "mean": [0.485, 0.456, 0.406],
+        "std": [0.229, 0.224, 0.225],
+    },
+    "ViT_b_16_ImageNet": {
+        "__cls__": "ViT_b_16_ImageNet",
+        "resize_dim": 256,
+        "input_dim": 224,
+        "feature_dim": 768,
+        "mean": [0.485, 0.456, 0.406],
+        "std": [0.229, 0.224, 0.225],
+    },
+    "ViT_l_16_ImageNet": {
+        "__cls__": "ViT_l_16_ImageNet",
+        "resize_dim": 256,
+        "input_dim": 224,
+        "feature_dim": 1024,
+        "mean": [0.485, 0.456, 0.406],
+        "std": [0.229, 0.224, 0.225],
+    },
+    "ViT_b_32_ImageNet": {
+        "__cls__": "ViT_b_32_ImageNet",
+        "resize_dim": 256,
+        "input_dim": 224,
+        "feature_dim": 768,
+        "mean": [0.485, 0.456, 0.406],
+        "std": [0.229, 0.224, 0.225],
+    },
+    "ViT_l_32_ImageNet": {
+        "__cls__": "ViT_l_32_ImageNet",
+        "resize_dim": 256,
+        "input_dim": 224,
+        "feature_dim": 1024,
+        "mean": [0.485, 0.456, 0.406],
+        "std": [0.229, 0.224, 0.225],
+    },
+    "SimCLR": {
+        "__cls__": "SimCLR",
+        "resize_dim": 256,
+        "input_dim": 224,
+        "feature_dim": 2048,
+    },
+    "DINO": {
+        "__cls__": "DINO",
+        "resize_dim": 256,
+        "input_dim": 224,
+        "feature_dim": 2048,
+        "mean": [0.485, 0.456, 0.406],
+        "std": [0.229, 0.224, 0.225],
+    },
+    "DINOv2": {
+        "__cls__": "DINOv2_base",
+        "resize_dim": 256,
+        "input_dim": 224,
+        "feature_dim": 768,
+        "mean": [0.485, 0.456, 0.406],
+        "std": [0.229, 0.224, 0.225],
+    },
+    "DINOv2_small": {
+        "__cls__": "DINOv2_small",
+        "resize_dim": 256,
+        "input_dim": 224,
+        "feature_dim": 384,
+        "mean": [0.485, 0.456, 0.406],
+        "std": [0.229, 0.224, 0.225],
+    },
+    "DINOv2_base": {
+        "__cls__": "DINOv2_base",
+        "resize_dim": 256,
+        "input_dim": 224,
+        "feature_dim": 768,
+        "mean": [0.485, 0.456, 0.406],
+        "std": [0.229, 0.224, 0.225],
+    },
+    "DINOv2_large": {
+        "__cls__": "DINOv2_large",
+        "resize_dim": 256,
+        "input_dim": 224,
+        "feature_dim": 1024,
+        "mean": [0.485, 0.456, 0.406],
+        "std": [0.229, 0.224, 0.225],
+    },
+    "ViT_MAE": {
+        "__cls__": "ViT_MAE",
+        "resize_dim": 256,
+        "input_dim": 224,
+        "feature_dim": 768,
+        "mean": [0.5, 0.5, 0.5],
+        "std": [0.5, 0.5, 0.5],
+    },
+    "CLIP": {
+        "__cls__": "CLIP",
+        "resize_dim": 256,
+        "input_dim": 224,
+        "feature_dim": 512,
+        "mean": [0.48145466, 0.4578275, 0.40821073],
+        "std": [0.26862954, 0.26130258, 0.27577711],
+    },
+    "IJEPA": {
+        "__cls__": "IJEPA",
+        "resize_dim": 256,
+        "input_dim": 224,
+        "feature_dim": 1280,
+        "mean": [0.485, 0.456, 0.406],
+        "std": [0.229, 0.224, 0.225],
+    },
+    "AFTER_Timbre": {
+        "__cls__": "AFTER_Timbre",
+        "sample_rate": 44100,
+        "extract_kws": {
+            "autoencoder_path": "./externals/AFTER/pretrained/AE_slakh.pt",
+            "checkpoint_path": "./externals/AFTER/pretrained/checkpoint1000000_EMA.pt",
+            "config_path": "./externals/AFTER/pretrained/config.gin",
+        },
+    },
+    "AFTER_Structure": {
+        "__cls__": "AFTER_Structure",
+        "sample_rate": 44100,
+        "item_len_sec": 1,
+        "extract_kws": {
+            "autoencoder_path": "./externals/AFTER/pretrained/AE_slakh.pt",
+            "checkpoint_path": "./externals/AFTER/pretrained/checkpoint1000000_EMA.pt",
+            "config_path": "./externals/AFTER/pretrained/config.gin",
+        },
+    },
+    "AFTER_Combined": {
+        "__cls__": "AFTER_Combined",
+        "sample_rate": 44100,
+        "item_len_sec": 1,
+        "extract_kws": {
+            "autoencoder_path": "./externals/AFTER/pretrained/AE_slakh.pt",
+            "checkpoint_path": "./externals/AFTER/pretrained/checkpoint1000000_EMA.pt",
+            "config_path": "./externals/AFTER/pretrained/config.gin",
+        },
+    },
+    "SSVQVAE_Combined": {
+        "__cls__": "SSVQVAE_Combined",
+        "item_len_sec": 1.0, 
+        "sample_rate": 16000,
+        "extract_kws": {
+            "logdir": "./externals/ss-vq-vae/experiments/slakh2100_train",
+            "model_state_path": "./externals/ss-vq-vae/experiments/slakh2100_train/model_state.pt",
+            "config_path": "./externals/ss-vq-vae/experiments/slakh2100_train/config.yaml"
+        }
+    },
+    "SSVQVAE_Structure": {
+        "__cls__": "SSVQVAE_Structure",
+        "item_len_sec": 1.0, 
+        "sample_rate": 16000,
+        "extract_kws": {
+            "logdir": "./externals/ss-vq-vae/experiments/slakh2100_train",
+            "model_state_path": "./externals/ss-vq-vae/experiments/slakh2100_train/model_state.pt",
+            "config_path": "./externals/ss-vq-vae/experiments/slakh2100_train/config.yaml"
+        }
+    },
+    "SSVQVAE_Timbre": {
+        "__cls__": "SSVQVAE_Timbre", 
+        "sample_rate": 16000,
+        "extract_kws": {
+            "logdir": "./externals/ss-vq-vae/experiments/slakh2100_train",
+            "model_state_path": "./externals/ss-vq-vae/experiments/slakh2100_train/model_state.pt",
+            "config_path": "./externals/ss-vq-vae/experiments/slakh2100_train/config.yaml"
+        }
+    },
+    "TSDSAE_Structure": {
+        "__cls__": "TSDSAE_Structure",
+        "item_len_sec": 4.0,
+        "sample_rate": 16000,
+        "extract_kws": {
+            "checkpoint_path": "./externals/dSEQ-VAE/outputs/epoch=738-step=2220695.ckpt"
+        },
+    },
+    "TSDSAE_Timbre": {
+        "__cls__": "TSDSAE_Timbre",
+        "item_len_sec": 4.0,
+        "sample_rate": 16000,
+        "extract_kws": {
+            "checkpoint_path": "./externals/dSEQ-VAE/outputs/epoch=738-step=2220695.ckpt"
+        },
+    },
+    "TSDSAE_Combined": {
+        "__cls__": "TSDSAE_Combined",
+        "item_len_sec": 4.0,
+        "sample_rate": 16000,
+        "extract_kws": {
+            "checkpoint_path": "./externals/dSEQ-VAE/outputs/epoch=738-step=2220695.ckpt"
+        },
+    },
+    "AFTER_Timbre_no_adv": {
+        "__cls__": "AFTER_Timbre",
+        "sample_rate": 44100,
+        "extract_kws": {
+            "autoencoder_path": "./externals/AFTER/pretrained/AE_slakh.pt",
+            "checkpoint_path": "./externals/AFTER/experiments/after_runs/slakh2100_train_no_adv/checkpoint1000000_EMA.pt",
+            "config_path": "./externals/AFTER/experiments/after_runs/slakh2100_train_no_adv/config.gin",
+        },
+    },
+    "AFTER_Structure_no_adv": {
+        "__cls__": "AFTER_Structure",
+        "sample_rate": 44100,
+        "extract_kws": {
+            "autoencoder_path": "./externals/AFTER/pretrained/AE_slakh.pt",
+            "checkpoint_path": "./externals/AFTER/experiments/after_runs/slakh2100_train_no_adv/checkpoint1000000_EMA.pt",
+            "config_path": "./externals/AFTER/experiments/after_runs/slakh2100_train_no_adv/config.gin",
+        },
+    },
+    "AFTER_Timbre_no_augm": {
+        "__cls__": "AFTER_Timbre",
+        "sample_rate": 44100,
+        "extract_kws": {
+            "autoencoder_path": "./externals/AFTER/pretrained/AE_slakh.pt",
+            "checkpoint_path": "./externals/AFTER/experiments/after_runs/slakh2100_train_no_augm/checkpoint1000000_EMA.pt",
+            "config_path": "./externals/AFTER/experiments/after_runs/slakh2100_train_no_augm/config.gin",
+        },
+    },
+    "AFTER_Structure_no_augm": {
+        "__cls__": "AFTER_Structure",
+        "sample_rate": 44100,
+        "extract_kws": {
+            "autoencoder_path": "./externals/AFTER/pretrained/AE_slakh.pt",
+            "checkpoint_path": "./externals/AFTER/experiments/after_runs/slakh2100_train_no_augm/checkpoint1000000_EMA.pt",
+            "config_path": "./externals/AFTER/experiments/after_runs/slakh2100_train_no_augm/config.gin",
+        },
+    },
+}
